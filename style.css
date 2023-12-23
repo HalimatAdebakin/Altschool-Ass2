@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'BrownExtraBold';
+    src: url('Brown/BrownExtraBold.woff2') format('woff2'),
+        url('Brown/BrownExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BrownExtraBoldCondensed';
+    src: url('Brown/BrownExtraBoldCondensed.woff2') format('woff2'),
+        url('Brown/BrownExtraBoldCondensed.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brown';
+    src: url('Brown/BrownBold.woff2') format('woff2'),
+        url('Brown/BrownBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brown';
+    src: url('Brown/BrownBoldItalic.woff2') format('woff2'),
+        url('Brown/BrownBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brown';
+    src: url('Brown/BrownItalic.woff2') format('woff2'),
+        url('Brown/BrownItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BrownHeavy';
+    src: url('Brown/BrownHeavy.woff2') format('woff2'),
+        url('Brown/BrownHeavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BrownLight';
+    src: url('Brown/BrownLight.woff2') format('woff2'),
+        url('Brown/BrownLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BrownLight';
+    src: url('Brown/BrownLight.woff2') format('woff2'),
+        url('Brown/BrownLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BrownMedium';
+    src: url('Brown/BrownMediumItalic.woff2') format('woff2'),
+        url('Brown/BrownMediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BrownMedium';
+    src: url('Brown/BrownMedium.woff2') format('woff2'),
+        url('Brown/BrownMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('Sofia Pro/SofiaProLight.woff2') format('woff2'),
+        url('Sofia Pro/SofiaProLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Sofia Pro', sans-serif ;
+  }
+ 
+  * {
+    margin: 0;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  img, picture, video, canvas, svg,label {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+ 
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/* Main CSS */
+.wrapper{
+    display: flex;
+    flex-shrink: 0;
+}
+
+section.left-side{
+    padding-block-start: 205px;
+    padding-block-end: 360px;
+    padding-inline-start: 140px;
+    padding-inline-end: 120px;
+    margin: auto;
+
+    >h2{
+        font-family: 'Brown',sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: -0.8px;
+        margin-block-start: 50px;
+        margin-block-end: 20px;
+    }
+
+    >p{
+        font-family: 'Brown',sans-serif;
+        width: 460px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color:hsl(0, 0%, 45%);
+    }
+}
+
+.card{
+    width: 500px;
+    margin-block-start: 81px;
+    margin-block-end: 80px;
+    margin-inline-end: 140px;
+    padding: 40px;
+    border-radius: 6px;
+    background: hsl(0, 0%, 100%);
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+    box-sizing: content-box;
+
+
+    >p{
+        font-family: 'Sofia Pro';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+       
+        text-align: center;
+
+        >a{
+            text-decoration-line: underline;
+            color:#2EC4B6;
+            font-weight: 500;
+        }
+    }
+}
+
+.input-row{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-block-end: 30px;
+
+    >div{
+        flex: 1;
+        >input,select{
+            width: 100% ;
+            border-radius: 2px;
+            border: 1px solid #F0F0F0;
+            padding-block: 10.4px;
+            padding-inline-start:16px;
+            padding-inline-end: 52px;
+            box-sizing: border-box;
+        }
+    }
+
+}
+
+label{
+    font-family: 'Sofia Pro';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    margin-block-end: 10px;
+    color: #011C34;
+}
+
+button{
+    width: 100%;
+    padding-block: 10.4px;
+    margin-block-end: 16px;
+    background-color: #2EC4B6;
+    border-radius: 2px;
+    border: 1px solid #F0F0F0;
+    color: white;
+    filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.10));
+}
+
+input:hover {
+    border-color: #2EC4B6;
+  }
